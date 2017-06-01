@@ -1,7 +1,6 @@
 #include "Header.h";
 #include <fstream>
 #include <string>
-#include "ElementListy.h";
 #include <climits>
 
 ProductionModel::ProductionModel() {
