@@ -115,11 +115,22 @@ void ProductionModel::bruteForce() {
 			}
 		}
 	}
+
 }
 
 void ProductionModel::showResult() {
 	std::cout << "Calkowity koszt: " << vertexes[0][0].cost_of_path << std::endl;
 	std::cout << "Droga:" << std::endl;
 	std::cout << "-------------------" << std::endl;
+	for (int i = 0; i < number_of_edges; i++) {
+		std::cout << i << ": " << E[i].cost << std::endl;
+	}
+	std::cout << "start: " << E[21].start.id << std::endl;
+	std::cout << "end: " << E[21].end.id << std::endl;
+	std::cout << "start: " << E[22].start.id << std::endl;
+	std::cout << "end: " << E[22].end.id << std::endl;
+	std::cout << "start: " << E[23].start.id << std::endl;
+	std::cout << "end: " << E[23].end.id << std::endl;
+
 }
 

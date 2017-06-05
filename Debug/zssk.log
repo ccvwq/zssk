@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\viktor\documents\visual studio 2015\projects\zssk\zssk\source.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  zssk.vcxproj -> C:\Users\viktor\documents\visual studio 2015\Projects\zssk\Debug\zssk.exe
+  zssk.vcxproj -> C:\Users\viktor\documents\visual studio 2015\Projects\zssk\Debug\zssk.pdb (Full PDB)
