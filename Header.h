@@ -11,6 +11,7 @@ private:
 		int cost_of_path;
 		int id;
 		int minCost;
+		int parentId;
 	};
 
 	struct Edge{
@@ -35,6 +36,7 @@ public:
 	void simulateCycle(int index);
 	void createGraph();
 	void bruteForce();
+	void showResult();
 
 };
 
