@@ -112,7 +112,7 @@ int main() {
 			}
 			timeBF /= (double)repeat;
 			timeBF /= 1000.0;
-			cout << "Sredni czas " << repeat << " powtorzen dla przegladu zupelnego: " << timeDyn << " ms" << endl;
+			cout << "Sredni czas " << repeat << " powtorzen dla przegladu zupelnego: " << timeBF << " ms" << endl;
 
 
 			timeDyn /= (double)repeat;
