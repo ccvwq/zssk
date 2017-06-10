@@ -146,9 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ElementListy.h" />
     <ClInclude Include="Header.h" />
-    <ClInclude Include="Krawedz.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

@@ -16,7 +16,8 @@ private:
 
 	struct Edge{
 		int cost, unit_cost, hold_cost;
-		Node start, end;
+		Node* start;
+		Node* end;
 	};
 	
 	int warehouse_space;
@@ -29,15 +30,25 @@ private:
 	int number_of_verticies;
 	int number_of_edges;
 	int idCounter;
+	int tempCost;
+	int *currentVertex;
+	int bestCost;
+	int *bestPath;
+	int lastId;
 
 public:
 	ProductionModel();
-	void getFromFile(std::string);
-	void simulateCycle(int index);
+	ProductionModel(int warehouse_space, int demand);
+	bool getFromFile(std::string);
 	void createGraph();
-	void bruteForce();
+	void dynamic();
 	void showResult();
-
+	void bruteForceRecursive(int x, int y);
+	void permutationCore(int pos);
+	int getNumberOfCycles();
+	int getbestCost();
+	int* getBestPath();
+	void fillAuto(int cycles);
 };
 
 #endif
